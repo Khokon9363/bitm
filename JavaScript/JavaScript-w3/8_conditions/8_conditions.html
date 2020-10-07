@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta http-equiv="refresh" content="0">
+</head>
+<body>
+<div style="width: 800px;margin: 0 auto;">
+   
+ <h1 id="time" style="text-align: center;font-size: 100px;"></h1>
+
+<script type="text/javascript">
+
+/*	
+// if
+const name = prompt('What is your name ?');
+
+if (name != '') {
+	console.log('Hello ' + name);
+}
+*/
+
+/*
+// if else
+if (name != '') {
+	console.log('Good Morning ' + name);
+} else {
+	console.log('Good Afternoon ' + name);
+}
+*/
+
+/*
+// if elseif else
+if (name == '') {
+	console.log('Required field');
+} else if (name == 'Edward') {
+    console.log('Hello ' + name +'Boss');
+} else {
+	console.log('Hello ' + name);
+}
+*/
+
+
+
+
+
+
+/*
+// switch
+let numbers = prompt('Give a number in the range 1 to 5)');
+switch (numbers) {
+        case '1':
+            result = 'You got 1';
+            break;
+        case '2':
+            result = 'You got 2';
+            break;
+        case '3':
+            result = 'You got 3';
+            break;
+        case '4':
+            result = 'You got 4';
+            break;
+        case '5':
+            result = 'You got 5';
+            break;
+        default:
+            result = 'Please input a number in the range 1 to 5';
+
+} console.log(result);
+
+
+let number = Number(numbers);
+switch (number) {
+        case 1:
+            result = 'You got 1';
+            break;
+        case 2:
+            result = 'You got 2';
+            break;
+        case 3:
+            result = 'You got 3';
+            break;
+        case 4:
+            result = 'You got 4';
+            break;
+        case 5:
+            result = 'You got 5';
+            break;
+        default:
+            result = 'Please input a number in the range 1 to 5';
+
+} console.log(result);
+*/
+
+
+
+
+
+
+
+
+
+let dates = new Date();
+
+let hour = dates.getHours();
+let minute = dates.getMinutes();
+let second = dates.getSeconds();
+let time = hour +':'+ minute +':'+ second;
+
+document.getElementById('time').innerHTML = time;
+
+
+
+
+
+
+</script>
+
+</div>
+</body>
+</html>

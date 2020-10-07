@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dom Gallary Take & Give Practice</title>
+	<style type="text/css">
+		.main-image{
+			height: 400px;
+			width: 450px;
+			border:20px inset lime;
+		}
+		.sub-image{
+			height: 50px;
+			width: 93px;
+			border:1px solid red;
+		}
+	</style>
+</head>
+<body>
+
+ <table>        <!--  Form -->
+ 	<tr>
+ 		<th>First Name</th>
+ 		<td><input type="text" name="first_name" id="firstName"></td>
+ 	</tr>
+ 	<tr>
+ 		<th>Last Name</th>
+ 		<td><input type="text" name="last_name" id="lastName"></td>
+ 	</tr>
+ </table>
+ <table border="1" style="border-collapse: collapse;">
+ 	<tr>
+ 		<th>First Name</th>
+ 		<th>Last Name</th>
+ 		<th>Full Name</th>
+ 	</tr>
+ 	<tr>
+ 		<td id="res1"></td>
+ 		<td id="res2"></td>
+ 		<td id="res3"></td>
+ 	</tr>
+ </table><br><hr>
+
+              <!-- Take and give DOM -->
+ <input type="button" name="btn" id="input" value="Input for DOM practice">
+ <h1 id="h1">This is a headline for DOM practice.</h1>
+ <img src="image/carousel1.jpg" id="img"><br><hr>
+
+
+
+
+
+        <!--  create element by click  -->
+  <button type="button" name="btn" id="btn">Click me</button>
+
+    <!-- Create element -->
+ <div id="div"></div><hr>
+
+
+
+
+<div style="margin-left: 200px;">           <!-- Image gallery -->
+  <img src="image/carousel1.jpg" class="main-image" id="mainImage">
+  <div>
+  	<img src="image/carousel1.jpg" class="sub-image" id="img1">
+  	<img src="image/carousel2.jpeg" class="sub-image" id="img2">
+  	<img src="image/carousel3.jpg" class="sub-image" id="img3">
+  	<img src="image/carousel4.jpg" class="sub-image" id="img4">
+  	<img src="image/carousel5.jpg" class="sub-image" id="img5">
+  </div>
+ </div>
+
+
+
+
+
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="my-script/my-script-practice.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<div style="width: 800px;margin: 0 auto;">
+
+<h1 id="demo"></h1>
+
+<script type="text/javascript">
+     
+/* // for loop
+for (let i=0; i<10; i++) {
+     
+     console.log(i);
+     document.write(i);
+}
+*/
+
+/*
+let Alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L'];
+let result = '';
+
+for(let i=0; i<Alphabet.length; i++){
+   
+    console.log(Alphabet[i]);
+    document.write(Alphabet[i] + ' ');
+
+    result += Alphabet[i] + ' ';                        // result = result + Alphabet
+    document.getElementById('demo').innerHTML = result;
+}
+*/
+
+
+
+
+// let bigNumber   = 10;
+// let smallNumber = 1;
+// let result      = '';
+/*
+// while loop
+while (smallNumber <= bigNumber) {
+      
+      result += smallNumber +'\n';        // result = result + smallNumber
+      smallNumber++;
+}
+console.log(result);
+*/
+
+/*
+// do while loop
+do {
+    result += smallNumber + '\n';          // result = result + smallNumber
+    smallNumber++;
+
+} while (smallNumber >= bigNumber)
+
+console.log(result);
+*/
+
+
+
+// PRACTICE
+
+let Alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L'];
+let result = '';
+
+  // for (let i = 0; i < Alphabet.length; i++) {
+
+  //     result += Alphabet[i] + ' ';
+
+  // } console.log(result);
+
+
+  let i = 0;
+ // while (i < Alphabet.length){
+       
+ //       result += Alphabet[i] + ' ';
+ //       i++;
+ // } console.log(result);
+
+
+while (i < Alphabet.length ){
+     
+     if (i === 5) { break; }
+     // if (i == 5) { break; }
+     // if (Alphabet[i] === 'F') { break; }
+     // if (Alphabet[i] == 'F') { break; }
+
+     result += Alphabet[i] + ' ';
+     i++;
+}console.log(result);
+
+
+
+
+
+
+
+
+ 
+</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<div style="width: 800px;margin: 0 auto;">
+
+
+
+<button onclick="this.style.display='none'">Display None</button>
+
+
+
+
+
+<script type="text/javascript">
+     
+/*
+// create an object
+ let person = {
+     
+     firstName:'Rahim',
+     lastName :'Hasan',
+     age      :50,
+     fullName : function() {
+                
+            return this.firstName +' '+ this.lastName;
+     }
+
+
+ };
+  console.log(person.fullName());  // call the function from the object
+*/
+
+
+
+
+// important 
+
+var person1 = {
+     
+     fullName : function() {
+     	return this.firstName +' '+ this.lastName;
+     }
+}
+var person2 = {
+
+     firstName :'Rahim',
+     lastName  :'Hasan',
+}
+console.log(person1.fullName.call(person2));
+
+
+
+
+ 
+</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript start-practice</title>
+</head>
+<body>
+   <script type="text/javascript">
+        // JavaScript oparator	
+    var x=25;
+    var y=32;
+    document.write(x); //25
+    document.write('<br/>');
+    document.write(y); //32
+    document.write('<br/>');
+    document.write(x+y); //57
+    document.write('<br/>');
+    document.write(x-y); //-7
+    document.write('<br/>');
+    document.write(x*y); //800
+    document.write('<br/>');     
+    document.write(x/y); //0.78125
+    document.write('<br/>');
+    document.write(x%y); //25
+    document.write('<br/>');
+    document.write('<br/>');
+
+
+
+    var firstName='Md';
+    var lastName='Shawon';
+    document.write('Full name is'+' '+firstName+' '+lastName);
+    document.write('<br/>');
+    document.write('<br/>');
+
+
+
+    var x=25;
+    document.write(x++); //25
+    document.write('<br/>');
+    document.write(++x); //27
+    document.write('<br/>');
+    document.write(x++); //27
+    document.write('<br/>');
+    document.write(--x); //27
+    document.write('<br/>');
+    document.write(x++); //27
+    document.write('<br/>');
+    document.write('<br/>');
+
+ 
+
+    var x=12;
+    document.write(-x); //-12
+    document.write('<br/>');
+    var x=-15;
+    document.write(-x); //15
+    document.write('<br/>');
+    document.write('<br/>');
+
+
+    
+    var x=10;
+    var y=20;
+    document.write(x+=y); //30
+    document.write('<br/>');
+    document.write(x-=y); //10
+    document.write('<br/>');
+    document.write(x*=y); //200
+    document.write('<br/>');
+    document.write(x/=y); //10
+    document.write('<br/>');
+    document.write(x%=y); //10
+    document.write('<br/>');
+    document.write('<br/>');
+
+
+        // data type ber kora
+     var x=10;
+     document.write(typeof(x)); //number
+     document.write('<br/>');
+     var x=10;
+     var y=20;
+     var z=x>y;
+     document.write(typeof(z)); //false
+     document.write('<br/>');
+    var x='hello';
+    document.write(typeof(x)); //string
+    document.write('<br/>');
+    document.write('<br/>');
+
+
+
+    var x=10;       // be carefull to right x and y
+    var y=20;         
+    document.write(x>y); //false
+    document.write('<br/>');
+    document.write(x>=y); //false
+    document.write('<br/>');
+    document.write(x<y); //true
+    document.write('<br/>');
+    document.write(x<=y); //true (akta holei true)
+    document.write('<br/>');
+    document.write(x==y); //false
+    document.write('<br/>');
+    document.write(x!=y); //true
+    document.write('<br/>');
+    document.write(x===y); //false (data type ak but equal noy.)
+    document.write('<br/>');
+    document.write(x!==y); //true (data type ak and equal noy.)
+    document.write('<br/>');
+    document.write('<br/>');
+
+
+
+          //logic gate er AND er NOT er use.
+     var x=10;         
+     var y=20;         // AND=1ta true holei true.
+     var z=30;        // NOT=1ta false holei false.
+     document.write((x>y)&&(y>z)); //false
+     document.write('<br/>');
+     document.write((x<y)&&(y>z)); //false
+     document.write('<br/>');
+     document.write((x<y)&&(y<z)); //true
+     document.write('<br/>');
+     document.write((x>y)||(y>z)); //false
+     document.write('<br/>');
+     document.write((x<y)||(y>z)); //true
+     document.write('<br/>');
+     document.write((x<y)||(y<z)); //true
+     document.write('<br/>');
+     document.write('<br/>');
+
+
+
+     var x=true;
+     document.write(x);
+     document.write('<br/>');
+     document.write(!x);
+     document.write('<br/>');
+     document.write('<br/>');
+
+             // JavaScript oparator close.
+
+
+
+
+
+
+          // Conditional
+
+     var x=10;
+     var y=20;
+     if(x>y){
+     	document.write('Hello World');
+     }
+     document.write('<br/>');
+
+
+	    if(x>y){
+          document.write('Hello World');
+         }
+       else{
+    	  document.write('Hello JavaScript')
+	     }
+          document.write('<br/>');
+          document.write('<br/>');
+
+
+
+             var x=10;
+             var y=20;
+             var z=30;
+             if(x>y){
+             	document.write('Hello World');
+             }
+             else if(y>z){
+             	document.write('Hello JavaScript');
+             }
+             else if(x>z){
+             	document.write('Hello DHAKA')
+             }
+             else{
+             	document.write('Hello successfull people')
+             }
+             document.write('<br/>');
+             document.write('<br/>');
+
+
+
+         if(x>y){
+         	document.write('Hello World');
+         }
+         if(y>z){
+         	document.write('Hello JavaScript');
+         }
+         if(x<z){
+         	document.write('Hello DHAKA');
+         }
+          document.write('<br/>');
+          document.write('<br/>');
+          document.write('<br/>');
+
+
+
+             //javascript loop
+               //switch loop
+     var x=10;
+     switch(x){
+     	case 5:
+     	document.write('Hello World');
+     	break;
+     	case 10:
+     	document.write('Hello JavaScript');
+     	break;
+     	case 15:
+     	document.write('Hello DHAKA');
+     	break;
+     	case 20:
+     	document.write('Hello successfull people')
+     	break;
+     	default:
+     	document.write('Hello default')
+     }
+      document.write('<br/>');
+      document.write('<br/>');
+
+
+            //for loop
+      var x;    
+      for(x=5; x<=10; x++){
+      	// document.write('Hello Bangladesh<br/>');
+      	document.write(x+'<br/>');
+      }
+      document.write('<br/>');
+      document.write('<br/>');
+
+
+          //while loop
+      var x=5;
+      while(x<=10){
+      	document.write(x+'<br/>');
+      	x++;
+      }
+      document.write('<br/>');
+      document.write('<br/>');
+
+
+
+           //do loop
+       var x=10;
+       do{
+       	document.write('Hello World<br/>');
+        x++;
+       }while(x>15);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script>
+</body>
+</html>

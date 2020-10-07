@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>nav drop carousel</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+        <!-- navbar=margin padding -->
+        <!-- navbar-nav=bullet chole jabe -->
+        <!-- navbar-expand=pasapasi -->
+        <!-- nav-link=a te padding hobe -->
+        <!-- container er kaj jani -->
+
+
+<div class="jumbotron mb-0">
+  <div class="container">
+    <h3>Some content goes here about something.</h3>
+    <p>Some content goes here about something.</p>
+  </div>
+</div>
+
+
+
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-success sticky-top">
+   <div class="container">
+
+     <a href="" class="navbar-brand">
+       <img src="image/logo.jpeg" style="height: 35px;width: 35px;">
+     </a>
+   
+ <button type="button" class="navbar-toggle" data-target="#main-menu" data-toggle="collapse">
+   <span class="navbar-toggler-icon">
+     <!-- <img src="image/logo.jpeg" style="height: 35px;width: 35px;"> -->
+    </span>
+ </button>
+
+   <div class="collapse navbar-collapse" id="main-menu">
+
+    <ul class="navbar-nav mr-auto">
+      <li><a href="" class="nav-link">Home</a></li>
+      <li><a href="" class="nav-link">Contact</a></li>
+      <li class="dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+    <ul class="dropdown-menu bg-success navbar-dark">
+      <li><a href="" class="nav-link">Service 1</a></li>
+      <li><a href="" class="nav-link">Service 2</a></li>
+      <li><a href="" class="nav-link">Service 3</a></li>
+    </ul>
+      </li>
+      <li><a href="" class="nav-link">Gallery</a></li>
+    </ul>
+    <ul class="navbar-nav">
+      <li><a href="" class="nav-link" data-toggle="modal" data-target="#loginmodal">Login</a></li>
+      <li><a href="" class="nav-link" data-toggle="modal" data-target="#signupmodal">Sign Up</a></li>
+    </ul>
+
+  </div>
+
+   </div>
+  </nav>
+
+
+                  <!-- slider -->
+                   <!-- carousel er part 3ta
+                   carousel inner
+                   carousel control
+                   carousel indicators -->
+            
+ <div id="main-slider" class="carousel slide" data-ride="carousel" data-interval="1000">
+        <!-- carousel indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+    <li data-target="#main-slider" data-slide-to="1"></li>
+    <li data-target="#main-slider" data-slide-to="2"></li>
+    <li data-target="#main-slider" data-slide-to="3"></li>
+    <li data-target="#main-slider" data-slide-to="4"></li>
+  </ol>
+                  <!-- carousel inner -->
+   <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/carousel1.jpg" class="w-100" height="400">
+        <div class="carousel-caption">
+          <p>Some.content goes here.Some.content goes here.Some.content goes here.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/carousel2.jpeg" class="w-100" height="400">
+        <div class="carousel-caption">
+          <p>Some.content goes here.Some.content goes here.Some.content goes here.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/carousel3.jpg" class="w-100" height="400">
+        <div class="carousel-caption">
+          <p>Some.content goes here.Some.content goes here.Some.content goes here.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/carousel4.jpg" class="w-100" height="400">
+        <div class="carousel-caption">
+          <p>Some.content goes here.Some.content goes here.Some.content goes here.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/carousel5.jpg" class="w-100" height="400">
+        <div class="carousel-caption">
+          <p>Some.content goes here.Some.content goes here.Some.content goes here.
+          </p>
+        </div>
+      </div>
+    </div>
+              <!-- carousel control -->
+  <a href="#main-slider" class="carousel-control-prev" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a href="#main-slider" class="carousel-control-next" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+
+</div>
+
+
+
+
+         <!-- Modal -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+
+  <hr>
+
+
+                    <!-- Card 3 type
+                    card-header
+                    card-body
+                    card-footer
+                     -->
+  <div class="card">
+    <div class="card-header"><h3>This is a heading.</h3></div>
+    <div class="card-body">
+      <h3>This is a heading.</h3>
+      <p>This is a paragraph.</p>
+    </div>
+    <div class="card-footer"><p>This is a paragraph.</p></div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <button type="button" data-toggle="modal" data-target="#loginmodal" class="btn btn-success">Login</button>
+        <button type="button" data-toggle="modal" data-target="#signupmodal" class="btn btn-success">Sign Up</button> -->
+
+        <div class="modal fade" id="loginmodal">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2>Login</h2>
+           <button type="button" class="close" data-dismiss="modal">&Cross;</button>
+              </div>
+
+              <div class="modal-body">
+                <label for="email">Email</label>   
+           <input type="email" name="email" id="email" class="form-control">
+                <label for="password">Password</label>    
+           <input type="password" name="password" id="password" class="form-control"><br>
+           <input type="submit" name="btn" value="submit" class="btn btn-success" class="form-control">
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="close btn btn warning" data-dismiss="modal">Close</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="signupmodal">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2>Login</h2>
+           <button type="button" class="close" data-dismiss="modal">&Cross;</button>
+              </div>
+            <div class="modal-body">
+              <label for="first_name">First Name</label>    
+              <input type="text" name="first_name" id="first_name" class="form-control">
+              <label for="last_name">Last Name</label>   
+              <input type="text" name="last_name" id="last_name" class="form-control">
+              <label for="email">Email address</label>
+              <input type="email" name="email_address" id="email" class="form-control">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" class="form-control">
+              <input type="submit" name="btn" value="submit" class="btn btn-success" class="form-control">
+        </div>
+              <div class="modal-footer">
+                <button type="button" class="close btn btn warning" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+ 
+
+
+
+  <script src="js/jquery.js"></script>
+  <scrip" src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

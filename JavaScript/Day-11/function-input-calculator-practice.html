@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>function input calculator practice</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+  <style type="text/css">
+  .firstNumberlabel,.secondNumberlabel,.resultlabel{
+  	 	    margin-top: 15px;
+  	 	    margin-left: 15px;
+  	 	    color: #040273;
+  	        }
+  .secondNumberinput,.firstNumberinput,.resultinput{
+  	 	    margin-top: 15px;
+  	 	    width: 116px;
+  	 	    border-left: 2px solid red;
+  	 	    border-top: 0;
+  	 	    border-right: 2px solid red;
+  	 	    border-bottom: 2px solid blue;
+  	 	    color: royalblue;
+	        font-size: 16px;
+	        font-weight: bold;
+	        background-color: transparent;
+	        border-radius: 10px 10px 0 0;
+           }
+  	 .firstNumberinput{
+  	 	      margin-left: 20px;
+  	 }
+  	 .resultinput{
+  	 	margin-left: 75px;
+  	 	border-left: 2px solid red;
+  	 	border-right: 2px solid red;
+  	 	border-radius: 10px 10px 0 0;
+  	 	width: 216px;
+	   color: blue;
+	   font-size: 20px;
+	  
+  	 }
+.secondNumberinput:hover,.firstNumberinput:hover{
+	   width: 216px;
+	   transition: 2s;
+	   border: 2px solid red;
+	   border-top: 2px solid blue;
+	   border-right: 2px solid blue;
+	   border-radius: 10px 0 0 10px;
+	   color: darkblue;
+	   font-size: 20px;
+	   background-color: transparent;
+}
+
+ .submit1,.submit2,.submit3,.submit5,.submit4,.submit,.submit6{margin-top: 18px;
+	   	margin-left: 10px;
+	   	padding: 4px;
+	   	background-color: yellow;
+	   	color: red;
+	   	font-weight: bolder;
+	   	font-size: 15px;
+	   }
+ .submit1{margin-left: 10px;
+      }
+ .submit1,.submit2,.submit3,.submit5,.submit4{
+ 	    padding-left: 12px;
+ 	    padding-right: 12px;
+    }
+ .submit6{
+ 	padding-right: 8px;
+ 	padding-left: 8px;
+ } 	 
+
+
+
+
+  </style>
+ 
+
+<body bgcolor=#26f7fd>
+    <div style="font-size: 20px; margin-left: 260px; margin-top:170px; border:30px outset #0aff02; width: 400px; height: 200px; background-color: white; color: black;">
+      	<label for="firstNumber" class="firstNumberlabel">First Number</label>
+      	<input type="text" name="firstNumber" id="firstNumber" class="firstNumberinput">
+      	 <br>
+      	<label for="secondNumber" class="secondNumberlabel">Second Number</label>
+      	<input type="text" name="secondNumber" id="secondNumber" class="secondNumberinput">
+      	 <br>
+      	<label for="result" class="resultlabel">Result</label>
+      	<input type="text" name="result" id="result" class="resultinput">
+      	 <br>
+      	<input type="button" value="+" id="addition" class="submit1"> 
+      	<input type="button" value="--" id="substraction" class="submit2"> 
+      	<input type="submit" value="X" id="multiplacation" class="submit3"> 
+      	<input type="submit" value="/" id="division" class="submit4">
+      	<input type="submit" value="%" id="reminder" class="submit5"> 
+      	<input type="submit" value="Ans" id="ans" class="submit6"> 
+      	<input type="submit" value="Clear" id="clear" class="submit"> 
+      	
+
+      </div>
+
+  <script src="my-script/my-script-practice.js"></script>
+</body>
+</html>

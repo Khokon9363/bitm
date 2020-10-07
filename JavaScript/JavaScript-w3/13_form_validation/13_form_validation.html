@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<div style="width: 800px;margin: 0 auto;">
+
+<!-- 
+<form id="myForm">
+	<input type="text" id="inputData">
+	<input type="button" value="Click here to submit" onclick="myFunction()">
+</form>
+
+<script type="text/javascript">
+
+function myFunction() {
+
+let val = document.getElementById('inputData').value;
+
+ if (val == '') {
+ 	return alert('The fill can not be empty .');
+ } else {
+ 	return alert(val);
+ }
+
+}
+
+ 
+</script> 
+-->
+
+
+
+<form id="myForm" onsubmit="myFunction()">
+	<input type="text" id="inputData">
+	<input type="submit" value="Click here to submit">
+</form>
+
+<script type="text/javascript">
+
+function myFunction() {
+  // var x = document.forms["myForm"]["inputData"].value; // 2 parameter form id, input id
+  var x = document.getElementById('inputData').value; 
+
+  if (x == "") {
+    alert('The fill can not be empty .');
+    
+  }
+
+}
+
+</script>
+<br><hr><br>
+
+
+
+
+
+<p>Please input a number between 1 and 10:</p>
+<input type="text" id="num">
+<input type="button" onclick="funcNum()" value="Submit">
+<h1 id="res"></h1>
+
+<script type="text/javascript">
+	
+    function funcNum() {
+	     
+	     let val = document.getElementById('num').value;
+
+	     if (val == '' || isNaN(val) || 1 > val || val> 10 ) {
+              result = 'Not Valid';
+	     } else {
+              result = 'OK';
+	     }
+         document.getElementById('res').innerHTML = result;
+    }
+
+</script>
+
+
+
+
+</div>
+</body>
+</html>

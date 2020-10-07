@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<div style="width: 800px;margin: 0 auto;">
+<button onclick="myFunctionAdd()">Counter +</button>
+<button onclick="myFunctionSub()">Counter -</button>
+<h1 id="demo">0</h1>
+
+<script type="text/javascript">
+
+let x = function (a,b) {return a + b};
+
+console.log(x(3,5));
+console.log(x(3,5) * 2);
+
+
+// arrow function
+let y = (a,b) => a - b;
+// let y = (a,b) => {return a - b};
+
+console.log(y(7,5));
+
+
+
+// counter practice
+
+function myFunctionAdd(){
+    let x = Number(document.getElementById('demo').innerHTML);
+
+    document.getElementById('demo').innerHTML = x+1;
+}
+function myFunctionSub(){
+    let x = Number(document.getElementById('demo').innerHTML);
+
+    document.getElementById('demo').innerHTML = x-1;
+}
+
+
+ 
+</script>
+
+</div>
+</body>
+</html>

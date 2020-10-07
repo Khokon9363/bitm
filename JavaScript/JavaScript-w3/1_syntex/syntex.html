@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<div style="width: 800px;margin: 0 auto;">
+
+
+    <button onclick="document.getElementById('dateTime').innerHTML = Date()">Current Date & Time</button>
+    <button onclick="console.log(Date())">Current Date & Time</button>
+    <button onclick="window.alert(Date())">Current Date & Time</button>
+    <h2 id="dateTime"></h2><hr>
+
+    
+    <button onclick=" document.getElementById('light').src='pic_bulboff.gif'; ">Turn off the light</button>
+	<img id="light" src="pic_bulboff.gif" style="width:100px">
+	<button onclick=" document.getElementById('light').src='pic_bulbon.gif'; ">Turn on the light</button><hr>
+    
+
+    <button onclick="document.getElementById('demo').innerHTML='Hello From by click on a button (innerHTML fact .)'; ">Click (innerHtml)</button>
+    <button onclick="document.getElementById('demo').innerHTML=''; ">Click (innerHtml = " ")</button>
+    <h2 id="demo"></h2><hr>
+
+    
+    <button onclick=" document.getElementById('fontSizeFact').style.fontSize='30px'; ">Increase</button>
+    <button onclick=" document.getElementById('fontSizeFact').style.fontSize='10px'; ">Decrease</button>
+    <button onclick=" document.getElementById('fontSizeFact').style.display='none'; ">Display = 'none'</button>
+    <button onclick=" document.getElementById('fontSizeFact').style.display='block'; ">Display = 'block'</button>
+    <p id="fontSizeFact">This is related to styling with fontSize property .</p><hr>
+ 
+
+  
+ 
+
+
+
+
+
+
+</div>
+  <script type="text/javascript" src="syntex.js"></script>
+</body>
+</html>

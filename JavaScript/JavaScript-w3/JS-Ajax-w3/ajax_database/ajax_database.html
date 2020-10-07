@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax</title>
+</head>
+<body>
+<div style="width: 1000px;margin: auto;"> 
+
+
+<h4 style="letter-spacing: 5px;">Suggestions : <h3 id="result"></h3></h3>
+<form action=""> 
+  <select name="customers" onchange="myFunction(this.value)">
+    <option value="">Select a customer:</option>
+    <option value="ALFKI">Alfreds Futterkiste</option>
+    <option value="NORTS ">North/South</option>
+    <option value="WOLZA">Wolski Zajazd</option>
+  </select>
+</form>
+
+<script>
+
+ function myFunction(data) {
+ 	    
+ 	    if (data == 0) {
+ 	    	
+ 	    	document.getElementById('result').innerHTML = '';
+
+ 	    } else {
+
+ 	    	let xhttp = new XMLHttpRequest();
+
+ 	    	xhttp.onreadystatechange = function () {
+
+                  if (this.readyState == 4 && this.status == 200) {
+
+                  	   document.getElementById('result').innerHTML = this.responseText;
+                  }
+
+ 	    	}
+              xhttp.open('POST','data.php?q=' + data ,true);
+ 			  xhttp.send();
+ 	    }
+ 	
+
+ }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

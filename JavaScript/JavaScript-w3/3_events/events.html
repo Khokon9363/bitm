@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+<div style="width: 800px;margin: 0 auto;">
+   
+
+
+   <input type="button" value="Current Time & Date with Date()" ondblclick="document.getElementById('dateMaker').innerHTML = Date();">
+   <input type="button" value="Current Time & Date with external function" onclick="displayDate()">
+   <h1 id="dateMaker">This is a simple headline .Change this with dbl click</h1><hr>
+
+
+
+   <input type="button" value="Current Time & Date" onclick="this.value = Date()">
+   <button onclick="this.innerHTML = Date()">The time is?</button><hr>
+
+
+
+   <input type="text" onkeypress="alert('You pressed a Key .');">
+   <input type="text" onkeyup="alert('onkeyup function .');">
+   <input type="text" onkeydown="alert('onkeydown function .');"><hr>
+
+
+   <input type="text" onclick="liveTextTranfer();" id="liveTextTranfer">
+   <input type="text" id="liveTextTranferReceiver">
+
+   
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = txt.length;
+</script>
+
+
+
+
+
+
+  <script type="text/javascript">
+  	    function displayDate() {
+  	    	 document.getElementById('dateMaker').innerHTML = Date();
+  	    }
+  	    function liveTextTranfer() {
+  	    	// document.getElementById('liveTextTranferReceiver').value = document.getElementById('liveTextTranfer').value; // for onkeydown / onkeyup
+
+  	    	document.getElementById('liveTextTranfer').value = prompt('Enter Your Name .');
+  	    	document.getElementById('liveTextTranferReceiver').value = document.getElementById('liveTextTranfer').value;
+  	    }
+  </script>
+
+
+</div>
+  <script type="text/javascript" src="events.js"></script>
+</body>
+</html>

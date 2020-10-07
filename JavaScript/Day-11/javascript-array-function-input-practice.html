@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Array practice</title>
+	<!-- <meta http-equiv="refresh" content="10"> -->
+</head>
+<body>
+  
+     <p>This is a paragraph 1</p>
+     <p>This is a paragraph 2</p>
+     <p>This is a paragraph 3</p>
+     <p>This is a paragraph 4</p>
+     <p>This is a paragraph 5</p>
+     <p>This is a paragraph 6</p>  <hr>
+  
+  <div style="border: 1px solid blue;margin-left: 300px;margin-right: 300px;text-align: center;">
+     <label for="firstName">First Name</label> 
+     <br>
+     <input type="text" name="firstName" id="firstName">
+     <br>
+     <label for="lastName">Last Name</label>
+     <br>
+     <input type="text" name="lastName" id="lastName">
+     <br>
+     <label for="password">Password</label>
+     <br>
+     <input type="password" name="password" id="password">
+     <br>
+     <input type="button" name="button" value="SIGN IN" id="sign-in">
+ </div>
+   <hr>
+
+  <div style="border: 1px solid blue;margin-left: 300px;margin-right: 300px;text-align: center;">
+     <label for="first">Your First Name is</label> 
+     
+     <input type="text" name="first" id="first">
+     <br>
+     <label for="last">Your Last Name is</label>
+     
+     <input type="text" name="last" id="last">
+     <br>
+     <label for="pass">Your Password is</label>
+     
+     <input type="text" name="pass" id="pass">
+     
+ </div>
+   <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script type="text/javascript">
+       
+								       var x;
+								        x=10;
+								        document.write(x);
+								        document.write('<br/>');
+								        document.write('<br/>');  
+        //........Array start.........
+
+   	    // system of Array writting
+   	    // 1) var data=new Array();
+   	    // 2) var data=Array();
+   	    // 3) var data=[];
+
+   	  var data=[];
+   	     data[0]=10;
+   	     data[1]=20;
+   	     data[2]=30;
+   	     data[3]=40;
+   	     data[4]=50;
+   	     data['Name']='Shawon';
+   	     data['Address']='Savar';
+   	     data['Proffesion']='Student';
+   	     data['Class']='Seven';
+
+   	  document.write(data[0]);
+   	  document.write('<br/>');
+   	  document.write(data[1]);
+   	  document.write('<br/>');
+   	  document.write(data[2]);
+   	  document.write('<br/>');
+   	  document.write(data[3]);
+   	  document.write('<br/>');
+   	  document.write(data[4]);
+   	  document.write('<br/>');
+   	  document.write(data[5]);
+   	  document.write('<br/>');
+   	  document.write(data['Name']);
+   	  document.write('<br/>');
+   	  document.write(data['Address']);
+   	  document.write('<br/>');
+   	  document.write(data['Proffesion']);
+   	  document.write('<br/>');
+   	  document.write(data['Class']);
+   	  document.write('<br/>');
+   	  document.write(data['Hello']);
+   	  document.write('<br/>');
+   	  document.write('<br/>');
+
+   	       // ...for in loop (sob Array index k aksathe anar jonno)
+   	  for(var key in data){
+   	  	document.write(data[key]+'<br/>');
+   	  } document.write('<br/>');
+   	    document.write('<br/>');
+
+      
+        // ......data er songkha ber kora
+       var data=[10,20,30,40,50,'Shawon','Savar','Student','Seven'];
+   	   document.write(data.length);
+   	   document.write('<br/>');
+   	   document.write('<br/>');
+
+   	   // .......number of index
+   	   var data=[10,20,30,40,50,'Shawon','Savar','Student','Seven'];
+   	    document.write(data.length-1);
+
+
+
+   	           //.........Array close............
+   	           document.write('<br/>');
+   	           document.write('<br/>');
+   	           document.write('<br/>');
+
+
+
+
+
+
+
+
+
+
+
+
+   	    //.......function start.............
+
+        function demo(){
+          document.write('Hello Bangladesh');
+        }demo();
+        document.write('<br/>');
+
+
+        function demo1(){
+         var firstName='Md';
+         var lastName='Shawon';
+         var fullName=firstName+' '+lastName;
+          document.write(fullName);
+        }demo1();
+         document.write('<br/>');
+         document.write('<br/>');
+       
+
+       function demo2(firstName,lastName){
+         var fullName=firstName+' '+lastName;
+         document.write(fullName);
+       }demo2('Md','Shawon');
+        document.write('<br/>');
+        demo2('Md','Hridoy');
+        document.write('<br/>');
+        demo2('Md','Sakib');
+        document.write('<br/>');
+        demo2('Md','Tamim');
+        document.write('<br/>');
+        demo2('Md','Mashrafi');
+        document.write('<br/>');
+        demo2('Md','Khokon');
+        document.write('<br/>');
+        document.write('<br/>');
+
+
+
+
+       
+          // ..must use innerHTML
+        // ...method(tag name ber kora and tag number ber kora)     
+     var data=document.getElementsByTagName('p');       //( akhane elements)
+       document.write(data[0].innerHTML);
+       document.write('<br/>');
+       document.write(data[1].innerHTML);
+       document.write('<br/>');
+       document.write(data[2].innerHTML);
+       document.write('<br/>');
+       document.write(data[3].innerHTML);
+       document.write('<br/>');
+       document.write(data[4].innerHTML);
+       document.write('<br/>');
+       document.write(data[5].innerHTML);
+       document.write('<br/>');
+       document.write('<br/>');
+
+         //aksathe ber korar jonno( for in loop)
+      for(var key in data){
+      document.write(data[key].innerHTML+'<br/>');
+     }document.write('<br/>');
+      document.write('<br/>');
+
+
+                // .......NOW start.......
+      var paragraphElement=document.getElementsByTagName('p');
+        document.write(paragraphElement[0].innerHTML);
+         document.write('<br/>');
+        document.write(paragraphElement[1].innerHTML);
+         document.write('<br/>');
+        document.write(paragraphElement[2].innerHTML);
+         document.write('<br/>');
+        document.write(paragraphElement[3].innerHTML);
+         document.write('<br/>');
+        document.write(paragraphElement[4].innerHTML);
+         document.write('<br/>');
+        document.write(paragraphElement[5].innerHTML);
+         document.write('<br/>');
+         document.write('<br/>');
+
+         //aksathe  for in loop
+      for(var key in paragraphElement){
+         document.write(paragraphElement[key].innerHTML+'<br/>');
+      }
+      
+      
+        //avabeo kora jay for loop diye
+     var paragraphElement=document.getElementsByTagName('p');
+     for(key=0; key<paragraphElement.length; key++){   //key holo x
+        document.write(paragraphElement[key].innerHTML+'<br/>');
+     }
+
+
+
+
+         
+//.........................................................
+
+
+         //......Login form user friendly
+
+     var button=document.getElementById('sign-in');
+         button.onclick=function(){
+            var firstName=document.getElementById('firstName').value;
+             document.getElementById('first').value=firstName;
+            var lastName=document.getElementById('lastName').value;
+             document.getElementById('last').value=lastName;
+            var password=document.getElementById('password').value;
+             document.getElementById('pass').value=password;
+         };
+
+      // var button=document.getElementById('sign-in');
+      //     button.onclick=function(){
+      //       var firstName=document.getElementById('firstName').value;
+      //       var lastName=document.getElementById('lastName').value;
+      //       var fullName='Hello'+' '+firstName+' '+lastName+' '+'!'
+      //        alert(fullName);
+      //       var password=document.getElementById('password').value;
+      //       var fullpassword='Your Password is'+' '+password;
+      //         alert(fullpassword);
+      //     };
+
+        
+
+
+
+    // .....................ALHAMDULILLAH.......................................
+
+
+
+
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<div style="width: 800px;margin: 0 auto;">
+
+<h1 id="demo">Hello Javascript Developers .</h1>
+<button onclick="myFunction(prompt('Enter a language name'))">Click Here</button>
+
+
+
+<script type="text/javascript">
+
+/*
+function myFunction(data) {
+
+	let mainName = document.getElementById('demo').innerHTML;
+	let replacedName = mainName.replace('Javascript',data);
+
+	document.getElementById('demo').innerHTML = replacedName;
+}
+*/
+
+function myFunction(data) {
+
+	let mainName = document.getElementById('demo').innerHTML = 'Hello ' + data + ' Developers';
+	let replacedName = mainName.replace(data,data);  // 1st = '' ; 2nd = prompt
+
+	document.getElementById('demo').innerHTML = replacedName;
+}
+
+
+
+
+
+
+ 
+</script>
+
+
+</div>
+</body>
+</html>

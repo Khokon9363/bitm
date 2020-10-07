@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript DOM</title>
+</head>
+<body>
+<div style="width: 800px;margin: 0 auto;">
+
+
+<h1 id="headline">Hello world</h1>
+
+<h1 class="headline">Hello world</h1>
+<h1 class="headline">Hello world</h1>
+<h1 class="headline">Hello world</h1>
+<h1 class="headline">Hello world</h1>
+<h1 class="headline">Hello world</h1>
+<h1 class="headline">Hello world</h1>
+<h1 class="headline">Hello world</h1>
+
+<p>Hello world</p>
+<p>Hello world</p>
+<p>Hello world</p>
+<p>Hello world</p><hr>
+
+<button id="demo">Add Event Listener</button><hr>
+
+<div id="projectDiv" style="height: 200px;width: 200px;background-color: lime;color: red;">Hello From project Div
+</div>
+<button onclick="removeProject()" id="project">Remove - Project</button><hr><br>
+
+
+
+
+<!--  node -->
+<div id="divNode"></div>
+
+<!-- node project -->
+<div id="nodeProject">
+	<button onclick="nodeFunc()">Node Project</button>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	
+	document.getElementById('headline').innerHTML = 'Hello From Id';
+
+
+
+
+	// document.getElementsByClassName('headline')[0].innerHTML = 'Hello From Class';
+
+    let x = document.getElementsByClassName('headline');
+	for (var i = 0; i < x.length; i++) {
+		x[i].innerHTML = 'Hello From all class';
+		x[i].style.color = 'red';
+	}
+
+
+
+	// document.getElementsByTagName('p')[0].innerHTML = 'Hello From Tag';
+
+	let y = document.getElementsByTagName('p');
+	for (var i = 0; i < y.length; i++) {
+		y[i].innerHTML = 'Hello From all tag';
+		y[i].style.color = 'blue';
+	}
+
+
+// addEventListener it can called with many functions
+// 1
+document.getElementById('demo').addEventListener('click',myFunction);
+
+ function myFunction() {
+ 	alert('Hello World');
+ }
+// remove it
+document.getElementById('demo').removeEventListener('click',myFunction);
+
+// 2
+document.getElementById('demo').addEventListener('click',function () { alert('Hello Sir') })
+// can't remove it
+
+
+// 3
+let a = 5;
+let b = 7;
+document.getElementById('demo').addEventListener('click',function (){ myfunc(a,b) });
+
+ function myfunc(a,b) {
+ 	alert(a * b);
+ }
+ // can't remove it
+
+
+
+
+
+
+// project
+document.getElementById('projectDiv').addEventListener('mousemove',projectFunc);
+
+function projectFunc() {
+  document.getElementById('projectDiv').innerHTML = Math.random();	
+}
+
+
+function removeProject() {
+  document.getElementById('projectDiv').removeEventListener('mousemove',projectFunc);	
+}
+
+/* addEventListener kaj na korle attachEvent */
+
+
+
+
+
+
+
+
+// node
+
+
+let createdH1  = document.createElement('h1');
+let createText = document.createTextNode('Hello From Node');
+
+createdH1.appendChild(createText);
+
+// document.body.appendChild(createdH1);
+document.getElementById('divNode').appendChild(createdH1); 
+
+
+
+
+
+// node project 
+function nodeFunc() {
+ let text = prompt('write Here');
+
+ let createNodeProject = document.createElement('h1');
+ let createTextForNodeProject = document.createTextNode(text);
+     createNodeProject.appendChild(createTextForNodeProject);
+
+ document.getElementById('nodeProject').appendChild(createNodeProject);
+ }
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

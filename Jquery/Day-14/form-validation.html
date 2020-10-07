@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Form Validation</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<form action="" method="post" id="registrationForm"> <!-- get-post -->
+  <table>
+  	 <tr>
+  	 	<th>First Name</th>
+  	 	<td>
+  	 		<input type="text" name="first_name" id="firstName">
+  	 		<span id="firstNameError" style="color: red;"></span>
+  	 	</td>
+  	 </tr>
+  	 <tr>
+  	 	<th>Last Name</th>
+  	 	<td>
+  	 		<input type="text" name="last_name" id="lastName">
+            <span id="lastNameError" style="color: red;"></span>
+  	 	</td>
+  	 </tr>
+  	 <tr>
+  	 	<th>Email</th>
+  	 	<td>
+  	 		<input type="email" name="email" id="email">
+  	    	<span id="emailError" style="color: red;"></span>
+  	 	</td>
+  	 </tr>
+  	 <tr>
+  	 	<th>Password</th>
+  	 	<td>
+  	 		<input type="password" name="password" id="password">
+  	 	    <span id="passwordError" style="color: red;"></span>
+  	 	</td>
+  	 </tr>
+  	 <tr>
+  	 	<th>Confirm Password</th>
+  	 	<td>
+  	 		<input type="password" name="confirm_password" id="confirmPassword">
+            <span id="confirmPasswordError" style="color: red;"></span>
+  	 	</td>
+  	 </tr>
+  	 <tr>
+  	 	<th>District Name</th>
+  	 	<td>
+  	 		<select name="district_name" id="districtName">
+  	 			<option>---Select District Name---</option>
+  	 			<option value="Dhaka">Dhaka</option>
+  	 			<option value="Khulna">Khulna</option>
+  	 			<option value="Savar">Savar</option>
+  	 			<option value="Dohar">Dohar</option>
+  	 		</select>
+  	 		<span id="districtNameError" style="color: red;"></span>
+  	 	</td>
+  	 </tr>
+  	 <tr>
+  	 	<th></th>
+  	 	<td><input type="submit" name="btn" id="btn" value="Submit"></td>
+  	 </tr>
+  </table>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <script type="text/javascript" src="my-script/my-script.js"></script>
+</body>
+</html>

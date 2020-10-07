@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Array function input</title>
+</head>
+<body>
+
+    
+    <div style="margin: 50px auto auto 400px;background-color: red;color: white;height: 200px;">
+       
+       <label for="firstName">First Name</label>
+      <br>
+      <input type="text" name="firstName" id="firstName">
+      <br>
+      <label for="lastName">Last name</label>
+      <br>
+      <input type="text" name="lastName" id="lastName">
+      <br>
+      <label>Full Name</label>
+      <br>
+      <input type="text" name="fullName" id="fullName">
+      <br/>
+      <input type="submit" value="Submit" id="submit">
+    </div>
+      
+   
+     
+
+
+ <!-- <p>Hello Rubel</p>
+      <p>Hello Jasim</p>
+      <p>Hello Alomgir</p>
+      <p>Hello Kobita</p>
+      <p>Hello Manna</p> -->
+
+
+
+  <script type="text/javascript">
+ 
+      // var submitx=document.getElementById('submit');
+      //   submitx.onclick=function(){
+      //     var x=document.getElementById('firstName').value;
+      //     // alert(x);
+      //     var y=document.getElementById('lastName').value;
+      //     // alert(y);
+      //     var z='Your Full Name is'+' '+x+' '+y;
+      //     alert(z);
+          
+      //   };
+
+      var submitElement=document.getElementById('submit');
+        submitElement.onclick=function(){
+          var firstNameValue=document.getElementById('firstName').value; 
+          var lastNameValue=document.getElementById('lastName').value;
+          var fullName='Your Full Name is'+' '+firstNameValue+' '+lastNameValue;
+         document.getElementById('fullName').value=fullName;
+          
+        };
+        
+
+
+
+
+
+
+             
+
+             //function middle
+      //    var paragraphElement=document.getElementsByTagName('p');
+          
+      //    for(var key=0; key<paragraphElement.length; key++){
+      //      document.write(paragraphElement[key].innerHTML+'<br/>');
+      //    }
+
+       //for loop diye kora hoise
+          // for(var x=0; x<paragraphElement.length; x++){
+          //  document.write(paragraphElement[x].innerHTML+'<br/>');
+          // }
+
+ 
+         //....functon start.......
+    // function demo(){
+    //   document.write('Hello Bangladesh');
+    //   var firstName='Rubel';
+    //   var lastName='Khan';
+    //   var fullName=firstName+' '+lastName;
+    //   document.write(fullName);
+    // }
+
+
+    // function demo(firstName,lastName){   
+    //  var fullName=firstName+' '+lastName;
+    //   document.write(fullName);
+    // }
+
+    // document.write('<br/>==========<br/>');
+    // demo('imran','hossain');
+    // document.write('<br/>==========<br/>');
+    // demo('maruf','hossain');
+    // document.write('<br/>==========<br/>');
+    // demo('mehedi','hasan');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    // var x;
+    // x=10;
+    // document.write(x);
+    // document.write('<br/>');
+
+ // Array likhar system 3 ta
+ //   var data=new Array();
+ //   var data=Array();
+ //     var data=[];
+
+
+
+    //  var data=[];
+    // data[0]=10;
+    // data[1]=20;
+    // data[2]=30;
+   //  data['name']='Moshiur';
+   //  data['city']='Mirpur-10';
+   //  data['country']='Bangladesh';
+
+    // document.write(data[0]); //30
+    // document.write('<br/>');
+    // document.write(data[1]); //20
+    // document.write('<br/>');
+    // document.write(data[2]); //10
+    // document.write('<br/>');
+    // document.write(data['name']); //Moshiur
+    // document.write('<br/>');
+    // document.write(data['city']); //Mirpur-10
+    // document.write('<br/>');
+    // document.write(data['country']); //Bangladesh
+    // document.write('<br/>');
+    //  //aksathe anar jonno
+    //  // for in loop
+    // for(var key in data){
+    //  document.write(data[key]+'<br/>');
+    // }
+
+
+
+    // var data=[10,20,30,'Moshiur','Mirpur-10','Bangladesh'];
+    // document.write(data[3]);
+    // document.write('<br/>');
+
+    // for(var key in data){
+    //    document.write(data[key]+'<br/>');
+    // }
+
+
+      // data er songkha ber kora
+    // var data=[10,20,30,'Moshiur','Mirpur-10','Bangladesh'];
+    //   document.write(data.length);
+    //   document.write('<br/>');
+
+     //(number of index)
+    // document.write(data.length-1);
+
+
+
+
+  </script>
+</body>
+</html>

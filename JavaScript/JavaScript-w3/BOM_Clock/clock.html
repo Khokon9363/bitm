@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+
+<h1 id="demo" style="text-align: center;"></h1>
+<h1 id="demo1" style="text-align: center;"></h1>
+
+
+<script type="text/javascript">
+
+setInterval(myTimer);
+
+function myTimer() {
+  document.getElementById("demo").innerHTML = new Date().toLocaleTimeString();
+}
+
+
+
+
+setInterval(myTiming);
+
+function myTiming() {
+  let time = new Date();
+  document.getElementById("demo1").innerHTML = time.getHours()+':'+time.getMinutes()+':'+time.getSeconds();
+}
+
+ 
+</script>
+
+</div>
+</body>
+</html>

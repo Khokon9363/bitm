@@ -1,0 +1,15 @@
+{
+	"name":" ",
+	"discription":" ",
+	"keywords":[],
+	"licence":" ",
+	"type":" ",
+	"require":{},
+	"require-dev":{},
+	"autoload":{
+		"classmap":[],
+		"par-4":{
+			"App\\":"app/"
+		}
+	}
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Form Practice</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+ <hr>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+
+
+                <!--  form-group -->    <!--  form-control -->
+    <div class="form-group">
+       <label for="firstName">First Name</label>
+       <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Write your first name" id="firstName">
+    </div>
+    <div class="form-group">
+       <label for="lastName">Last Name</label>
+       <input type="text" name="lastName" class="form-control" placeholder="Write your last name" id="lastName">
+    </div>
+    <div class="form-group">
+       <label for="email">Email Address</label>
+       <input type="email" name="email" class="form-control" placeholder="Write your email address" id="email">
+    </div>
+    <div class="form-group">
+       <label for="password">Password</label>
+       <input type="password" name="password" class="form-control" placeholder="Write your Password" id="password">
+    </div>
+    <div class="form-group">
+       <label for="phoneNumber">Phone Number</label>
+       <input type="number" name="phoneNumber" class="form-control" placeholder="White your Phone Number" id="phoneNumber">
+    </div>
+    <div class="form-group">
+       <label for="dateOfBirth">Date Of Birth</label>
+       <input type="date" name="dateOfBirth" class="form-control" id="dateOfBirth">
+    </div>
+    <div class="form-group">
+       <label for="male"><input type="radio" name="gender" id="male">Male</label>
+       <label for="female"><input type="radio" name="gender" id="female">Female</label>
+    </div>
+    <div class="form-group">
+       <label for="textArea">Your Feedback</label>
+       <textarea class="form-control" name="textArea" id="textArea" style="height: 100px;width: 350px;"></textarea>
+    </div>
+    <div class="form-group">
+       <label for="courses">Choose your courses</label>
+       <select class="form-control" id="courses" name="courses" multiple>
+       		<option disabled selected>------Choose your courses------</option>
+       		<option value="HTML">HTML</option>
+       		<option value="CSS">CSS</option>
+       		<option value="BOOTSTRAP">BOOTSTRAP</option>
+       		<option value="JAVASCRIPT">JAVASCRIPT</option>
+       		<option value="JQUERY">JQUERY</option>
+       	</select>
+    </div>
+    <div class="form-group">
+       <label for="image">Upload your image</label>
+       <input type="file" name="image" id="image" class="form-control" accept="image/*" multiple>
+    </div>
+                <!-- form-check-label -->  <!-- form-check-input -->
+    <div class="form-group">
+       <label class="form-check-label">
+       <input type="checkbox" name="agree" value="agree">
+         I agree with your terms & conditions.</label>
+    </div>
+                    <!--  form-check-inline -->
+    <div class="form-group form-check-inline">
+       <label class="form-check-label">
+       <input type="checkbox" name="agree" value="agree" class="form-check-input">
+       	HTML</label>
+    </div>
+    <div class="form-group form-check-inline">
+       <label class="form-check-label">
+       <input type="checkbox" name="agree" value="agree" class="form-check-input">
+       	CSS</label>
+    </div>
+    <div class="form-group form-check-inline">
+       <label class="form-check-label">
+       <input type="checkbox" name="agree" value="agree" class="form-check-input">
+       	BOOTSTRAP</label>
+    </div>
+    <div class="form-group form-check-inline">
+       <label class="form-check-label">
+       <input type="checkbox" name="agree" value="agree" class="form-check-input">
+       	JAVASCRIPT</label>
+    </div>
+    <div class="form-group">
+       <input type="button" name="btn" value="Submit" class="form-control btn btn-success">
+    </div>
+
+
+
+</div>
+</div>
+</div>
+
+
+  <script type="text/javascript" src="js/bootstrap.css"></script>
+</body>
+</html>
